@@ -19,6 +19,7 @@
     margin-top: 20px;
     /* transform: translateY(-371%); */
     font-family: --var(--bs-font-heading);
+    font-weight: bold;
 }
 
 .welcome img {

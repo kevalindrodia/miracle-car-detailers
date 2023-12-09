@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
             complete: function() {
                 // Set sessionStorage to indicate the welcome screen has been shown
                 sessionStorage.setItem('welcomeScreen', 'true');
-                
+                welcomeWrapper.remove()
                 // Reveal page_wrapper after welcome screen animation is complete
                 pageWrapper.style.display = 'block';
             }
