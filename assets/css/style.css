@@ -79,6 +79,8 @@
   --bs-transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -455,7 +457,7 @@ mark {
 .backtotop .scroll {
   z-index: 1;
   width: 40px;
-  height: 48px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,13 +472,12 @@ mark {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--bs-primary);
-  -webkit-clip-path: polygon(50% 0, 100% 14px, 100% calc(100% - 14px), 50% 100%, 0 calc(100% - 14px), 0 14px);
-          clip-path: polygon(50% 0, 100% 14px, 100% calc(100% - 14px), 50% 100%, 0 calc(100% - 14px), 0 14px);
+  clip-path: circle(50% at 50% 50%);
 }
-.backtotop .scroll i {
+/* .backtotop .scroll i {
   -webkit-animation: bttIconMover 1s infinite alternate;
           animation: bttIconMover 1s infinite alternate;
-}
+} */
 
 /* 2.3 - Backtotop - End
 ================================================== */
@@ -894,6 +895,7 @@ mark {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #343434;
+  -webkit-text-stroke-color: #af061486;
   font-family: var(--bs-font-heading);
 }
 
@@ -2222,7 +2224,7 @@ blockquote .quote_content {
   margin: 0 -170px -70px 0;
 }
 .hero_section_1 .outline_text {
-  left: 32%;
+  left: 42%;
   top: 166px;
   position: absolute;
 }
@@ -2713,10 +2715,10 @@ blockquote .quote_content {
 .service_item:hover:before {
   width: 100%;
 }
-.service_item:hover .item_icon svg, .service_item:hover .item_icon img, .service_item:hover .item_icon i {
+/* .service_item:hover .item_icon svg, .service_item:hover .item_icon img, .service_item:hover .item_icon i {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-}
+/* } */ /*Used to rotate icons on hover */
 
 .service_item:has(.item_image) {
   padding: 0;
@@ -4173,10 +4175,10 @@ blockquote .quote_content {
   object-fit: cover;
 }
 
-.brand_logo_carousel:hover > :not(:hover){
+/* .brand_logo_carousel:hover > :not(:hover){
   filter: blur(2px);
   transition: 0.5s ease-in-out;
-}
+} */ /* to highlight hovered item and blur other items that are not hovered*/
 
 /* 3.8 - Brands Logo - End
 ================================================== */
@@ -5629,7 +5631,7 @@ Responsive For Mobile & Tablet Devices
             flex: 0 0 50%;
   }
   .hero_section_1 .outline_text {
-    left: 16%;
+    left: 25%;
   }
   .service_item:has(.item_image) .item_content {
     padding: 20px 30px 20px 20px;

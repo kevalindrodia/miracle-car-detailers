@@ -477,7 +477,7 @@
 
   // Carousels - Start
   // --------------------------------------------------
-  $('.brand_logo_carousel').slick({
+/*   $('.brand_logo_carousel').slick({
     dots: false,
     speed: 8000,
     arrows: false,
@@ -518,7 +518,7 @@
       }
     }
     ]
-  });
+  }); */ // To implement automatic sliding carousel for brand logos
   // Carousels - End
   // --------------------------------------------------
 
