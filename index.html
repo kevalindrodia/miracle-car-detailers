@@ -455,7 +455,7 @@
           <!-- <a class="btn btn-primary" href="service.html">
             <span class="btn_text">More >></span>
           </a> -->
-          <button class="animated-button">
+          <button onclick="toServicePage()" class="animated-button">
             <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
@@ -469,7 +469,11 @@
               ></path>
             </svg>
           </button>
-          
+          <script>
+            const toServicePage = () => {
+    window.location.href = 'services';
+};
+          </script>
           <style>
             .animated-button {
   position: relative;
@@ -1103,7 +1107,7 @@
           </div>
         </div>
       </section> 
-    <section class="appointment_form_section section_space_lg"  id="contactus" style="background-image: url('https://images.pexels.com/photos/8664308/pexels-photo-8664308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),linear-gradient(#000000a8,#000000a8);background-repeat: no-repeat;background-size: cover;">
+    <section class="appointment_form_section section_space_lg"  id="contactus" style="background-image: url('assets/images/shapes/tyre_print_5.svg'),linear-gradient(#000000a8,#000000a8);background-repeat: no-repeat;background-size: cover;">
 
         <div class="container">
 
