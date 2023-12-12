@@ -2227,7 +2227,7 @@ blockquote .quote_content {
 }
 .hero_section_1 .outline_text {
   left: 42%;
-  top: 166px;
+  top: 20px;
   position: absolute;
 }
 
@@ -5698,7 +5698,7 @@ Responsive For Mobile & Tablet Devices
   }
   .hero_section_1 .outline_text {
     left: 0%;
-    top: 130px;
+    top: 13px;
   }
   .category_item .item_title {
     font-size: 20px;
@@ -6012,7 +6012,7 @@ Responsive For Mobile & Tablet Devices
   }
   .hero_section_1 .outline_text {
     left: 10%;
-    top: 180px;
+    top: 18px;
   }
   .counter_items_group > [class*=col-] {
     padding: 20px 15px;

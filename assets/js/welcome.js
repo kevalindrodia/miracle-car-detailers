@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var welcomeWrapper = document.querySelector('.welcome');
-    var carImg = document.querySelector('.car-img');
+    var carImg = document.querySelector('.car-img img');
     var pageWrapper = document.querySelector('.page_wrapper');
     var welcomePara = document.querySelector('.welcome p');
 
@@ -20,8 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .add({
                 targets: carImg,
+                maskImage: ['linear-gradient(to right, black 0%, black 33%, transparent 33%, transparent 66%, transparent 66%, transparent 100%)', 'none'],
+                easing: 'linear',
+                duration: 800, // Adjust the duration to control the speed of the reveal
+            })
+            .add({
+                targets: carImg,
                 opacity: [0, 1], // Fade In
-                easing: 'cubicBezier(0.44, 0.03, 0.56, 0.85)',
+                easing: 'linear',
                 delay: 500, // Delay before starting fade in
             })
             .add({
@@ -43,12 +49,12 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .add({
                 targets: welcomeWrapper,
-                opacity: [1, 0], // Fade Out
+                //opacity: [1, 0], // Fade Out
                 delay: 800, // Delay before starting fade out
                 complete: function () {
                     // Set sessionStorage to indicate the welcome screen has been shown
-                    // sessionStorage.setItem('welcomeScreen', 'true');
-                    // welcomeWrapper.remove();
+                    sessionStorage.setItem('welcomeScreen', 'true');
+                    welcomeWrapper.remove();
                 }
             });
     } else {

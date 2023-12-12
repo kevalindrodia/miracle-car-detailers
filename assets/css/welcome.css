@@ -37,10 +37,11 @@
 }
 
 .welcome .car-img{
-    opacity: 0;
+    
 }
 
 .welcome img {
     max-width: 100%;
     height: auto;
+    opacity: 0;
 }
