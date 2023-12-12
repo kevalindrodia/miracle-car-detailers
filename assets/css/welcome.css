@@ -22,13 +22,22 @@
     font-size: 24px;
     font-size: 40px;
     margin-top: 20px;
-    transform: translateY(-100%);
+    /* transform: translateY(-100%); */
+    /* opacity: 0; */
     font-family: var(--bs-font-body);
     font-family: var(--bs-font-heading);
     font-weight: bold;
     overflow: hidden;
     margin: 0!important;
     /* height: 50px; */
+}
+
+.welcome p span{
+    opacity: 0;
+}
+
+.welcome .car-img{
+    opacity: 0;
 }
 
 .welcome img {

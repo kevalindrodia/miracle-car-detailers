@@ -896,6 +896,7 @@ mark {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #343434;
+  -webkit-text-stroke-color: #2e2e2e;
   -webkit-text-stroke-color: #af061486;
   font-family: var(--bs-font-heading);
 }
