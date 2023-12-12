@@ -45,11 +45,14 @@
     <div class="car-img">
         <img src="assets/images/site_logo/logo.png" alt="">
     </div>
-    <p>Your One Stop Car Shop !</p>
+    <div class="welcomeText">
+      <p>Your One Stop Car Shop !</p>
+    </div>
   </div>
   <style>
     .welcome{
-      background-image: url('https://img.freepik.com/free-photo/black-plain-concrete-textured_53876-95551.jpg?w=1060&t=st=1702278015~exp=1702278615~hmac=68da881c44d0600ad2581b2a690ea72db5376dee9a1915bbbec886b8ad52cd9d');
+      background-image: url('https://images.unsplash.com/photo-1638184984605-af1f05249a56?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-image: url('https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -198,7 +201,7 @@
 
             <div class="col-lg-6">
 
-              <div class="hero_section_image"><img 
+              <div class="hero_section_image"><img data-parallax='{"scale" : 0.6, "smoothness": 8}'
                   src="assets/images/hero/hero_image_5.webp" alt="Miracle Car Detailers – Car Service Image">
                   <style>
                     .hero_section_image{
@@ -215,7 +218,7 @@
           </div>
         </div>
 
-        <div class="outline_text" style="-webkit-text-stroke-color: #343434;" data-parallax='{"x" : -200, "smoothness": 8}'>Miracle Car Detailers
+        <div class="outline_text" style="-webkit-text-stroke-color: #474747;" data-parallax='{"x" : -200, "smoothness": 8}'>Miracle Car Detailers
         </div>
       </section>
 
@@ -841,7 +844,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-lg-between">
                 <div class="col-lg-6 order-lg-last">
-                    <div class="image_widget"><img src="assets/images/about/about_image_8.jpg" alt="ProMotors - About Image"></div>
+                    <div class="image_widget"><img src="assets/images/about/about_image_8.jpg" alt="Miracle Car Detailers - About Image"></div>
                 </div>
                 <div class="col-lg-6">
                     <div class="about_content pe-lg-5">
@@ -879,6 +882,41 @@
                     </div>
                 </div>
             </div>
+        </div>
+      </section>
+      <section class="portfolio_section section_space_lg">
+        <div class="container">
+            <div class="section_heading">
+                <h2 class="heading_text mb-0 wow" data-splitting>Our Works</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image_before_after"><img src="assets/images/portfolio/portfolio_img_5.jpg" alt="Miracle Car Detailers - Car Repair Service"> <img src="assets/images/portfolio/portfolio_img_6.jpg" alt="Miracle Car Detailers - Car Repair Service"></div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image_before_after"><img src="assets/images/portfolio/portfolio_img_7.jpg" alt="Miracle Car Detailers - Car Repair Service"> <img src="assets/images/portfolio/portfolio_img_8.jpg" alt="Miracle Car Detailers - Car Repair Service"></div>
+                </div>
+            </div>
+            <br>
+            <button onclick="toPortfolioPage()" class="animated-button">
+              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">All Works</span>
+              <span class="circle"></span>
+              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+            </button>
+            <script>
+                          const toPortfolioPage = () => {
+    window.location.href = 'portfolio';
+};
+            </script>
         </div>
     </section>
       <section class="brand_logo_section text-center" style="margin: 3rem 0;">

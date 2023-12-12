@@ -8,18 +8,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: #040404;
     /* opacity: 0; */
     z-index: 800; /* Keep the welcome wrapper on top */
+}
+
+.welcomeText{
+    overflow: hidden;
 }
 
 .welcome p {
     color: white;
     font-size: 24px;
+    font-size: 40px;
     margin-top: 20px;
-    /* transform: translateY(-371%); */
-    font-family: --var(--bs-font-heading);
+    transform: translateY(-100%);
+    font-family: var(--bs-font-body);
+    font-family: var(--bs-font-heading);
     font-weight: bold;
+    overflow: hidden;
+    margin: 0!important;
+    /* height: 50px; */
 }
 
 .welcome img {

@@ -577,8 +577,8 @@
     opacity: 0.8,
     hoverOpacity: 1,
     activeOpacity: 1,
-    separatorColor: "#D16527",
-    bulletColor: "#D16527",
+    separatorColor: "#af0614",
+    bulletColor: "#af0614",
     arrowColor: "#FFFFFF",
   });
   // Image Before After - End
