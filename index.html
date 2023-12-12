@@ -62,11 +62,11 @@
     <div class="backtotop"><a href="#" class="scroll"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
-    <!-- <div class="customNav"
-      style="background-color: #000000a8;backdrop-filter: blur(8px);position: fixed;top: 0;z-index: 10;width: 100vw;height: 5rem;">
+    <div class="customNav"
+      style="background-color: #000000a8;backdrop-filter: blur(8px);position: fixed;top: 0;z-index: 10;width: 100vw;height: 5rem;visibility: hidden;">
       <img src="assets/images/site_logo/logo.png" alt="" style="height: 120px;max-width: 100%;object-fit: cover;position: absolute;top: -0.3rem;left: 1rem;">
-    </div> -->
-
+    </div>
+    
     <main class="page_content">
       <section class="hero_section hero_section_1">
 
@@ -1413,6 +1413,33 @@
       </div>
     </footer>
   </div>
+  <script>
+    // Get the elements
+  const servicesSection = document.querySelector('.service_section');
+  const customNav = document.querySelector('.customNav');
+  
+  // Check if elements are found
+  if (servicesSection && customNav) {
+      // Set up the Intersection Observer
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  // The services_section is intersecting with the customNav
+                  customNav.style.visibility = 'visible';
+              } else {
+                  // The services_section is not intersecting with the customNav
+                  customNav.style.visibility = 'hidden';
+              }
+          });
+      }, { threshold: 0.5 }); // Adjust the threshold as needed
+  
+      // Start observing the services_section
+      observer.observe(servicesSection);
+  } else {
+      console.error("Couldn't find elements: servicesSection or customNav");
+  }
+  
+  </script>
   <script src="assets/js/jquery.min.js">
   </script>
   <script src="assets/js/popper.min.js">
